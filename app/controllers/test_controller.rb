@@ -1,5 +1,5 @@
 class TestController < ApplicationController
   def index
-    render plain: 'plain text'
+    render :index
   end
 end
