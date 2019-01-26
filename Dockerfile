@@ -7,6 +7,9 @@ WORKDIR /usr/src/app
 COPY Gemfile ./Gemfile
 COPY Gemfile.lock ./Gemfile.lock
 
+RUN gem install bundler
 RUN bundle install
+RUN rails webpacker:install
+RUN rails db:migrate
 
-ADD . .
+COPY . .
