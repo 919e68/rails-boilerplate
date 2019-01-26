@@ -23,7 +23,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN bundle install
+RUN bundle
 RUN yarn install
 # RUN rails db:migrate
 RUN ./bin/webpack
