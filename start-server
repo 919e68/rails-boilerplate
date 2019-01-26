@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker rm rails-app
+docker rm rails-db
+docker-compose up --build

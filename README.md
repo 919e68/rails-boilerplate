@@ -2,7 +2,7 @@
 
 ##### start the app
 ```
-docker-compose up --build
+./start-server
 ```
 
 ##### start dev server

@@ -21,11 +21,9 @@ RUN curl -sL "https://deb.nodesource.com/setup_$NODE_VERSION" -o nodesource_setu
 
 WORKDIR /usr/src/app
 
-COPY Gemfile ./Gemfile
-COPY Gemfile.lock ./Gemfile.lock
-
-RUN yarn install
-RUN bundle install
-RUN rails db:migrate
-
 COPY . .
+
+RUN bundle install
+RUN yarn install
+# RUN rails db:migrate
+RUN ./bin/webpack
