@@ -24,6 +24,7 @@ WORKDIR /usr/src/app
 COPY Gemfile ./Gemfile
 COPY Gemfile.lock ./Gemfile.lock
 
+RUN yarn install
 RUN bundle install
 RUN rails db:migrate
 
