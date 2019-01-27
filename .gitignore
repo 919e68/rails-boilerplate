@@ -22,4 +22,3 @@ node_modules
 /public/packs-test
 
 .yarn-integrity
-yarn.lock

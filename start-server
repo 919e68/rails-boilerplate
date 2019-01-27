@@ -2,4 +2,6 @@
 
 docker rm rails-app
 docker rm rails-db
-docker-compose up --build
+
+docker-compose build
+docker-compose up
